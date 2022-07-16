@@ -5,77 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>HomeWork at Figma</title>
+    <link rel="stylesheet" href="./accets/styles/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About me">About me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Contacts">Contacts</a></li>
-            </ul>
+        <nav class="site-nav">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-item-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#About me">About me</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#Skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#Portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#Contacts">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section>
-        <h1 id="#Home">Denis Novik</h1>
-        <img src="./accets/images/hero1.jpg" alt="foto Denis Novik" width="970">
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title" id="#Home">Denis Novik</h1>
+            <div>
+                <img src="./accets/images/hero1.jpg" alt="foto Denis Novik" width="970">
+            </div>
+        </div>
     </section>
-    <section>
-        <h2 id="About me">About me</h2>
-        <p>Hi, I'm Denis – UX/UI designer from Minsk. 
+    <section class="about-me">
+        <h2 class="about-me-title" id="About me">About me</h2>
+        <p class="about-me-text">Hi, I'm Denis – UX/UI designer from Minsk. <br>
             I'm interested in design and everything connected with it.</p>
-        <p>I'm studying at courses "Web and mobile design
+        <p class="about-me-text">I'm studying at courses "Web and mobile design
         interfaces" in IT-Academy.</p>
-        <p>Ready to implement excellent projects
+        <p class="about-me-text">Ready to implement excellent projects <br>
         with wonderful people.</p>
     </section>
-    <section>
-        <h2 id="Skills">Skills</h2>
-        <ul> I work in such programs as
-        <li><img src="./accets/images/Ps.jpg" alt="img ps" width="80">
-            <span>Adobe Photoshop</span>
-            <img src="./accets/images/rating2.jpg" alt="stars" width="170"></li>
-        <li><img src="./accets/images/Ai.jpg" alt="img ai" width="80">
-            <span>Adobe Illustrator</span>
-            <img src="./accets/images/rating3.jpg" alt="stars" width="170"></li>
-        <li><img src="./accets/images/Ae.jpg" alt="img ae" width="80">
-            <span>Adobe After Effects</span>
-            <img src="./accets/images/rating4.jpg" alt="stars" width="170"></li>
-        <li><img src="./accets/images/Figma.jpg" alt="img Figma" width="54">
-            <span>Figma</span>
-            <img src="./accets/images/rating5.jpg" alt="stars" width="170"></li>
-        </ul>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="skills-title">Skills</h2>
+            <p class="skills_description">I work in such programs as</p>
+            <div class="skills_content">
+                <div class="skill_item">
+                    <div class="skill_img">
+                        <img src="./accets/images/Ps.jpg" alt="Photoshop">
+                    </div>
+                    <p class="skill_name">Adobe Photoshop
+                    </p>
+                    <div class="skill_rating">
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star grey"></span>
+                        <span class="skill_star grey"></span>
+                        <span class="skill_star grey"></span>
+                    </div>
+                </div>
+    
+                <div class="skill_item">
+                    <div class="skill_img">
+                        <img src="./accets/images/Ai.jpg" alt="Ai">
+                    </div>
+                    <p class="skill_name">
+                        Adobe Illustrator
+                    </p>
+                    <div class="skill_rating">
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star grey"></span>
+                        <span class="skill_star grey"></span>
+                    </div>
+                </div>
+    
+                <div class="skill_item">
+                    <div class="skill_img">
+                        <img src="./accets/images/Ae.jpg" alt="Ae">
+                    </div>
+                    <p class="skill_name">
+                        After Effects
+                    </p>
+                    <div class="skill_rating">
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star grey"></span>
+                    </div>
+                </div>
+    
+                <div id="first_screen" class="skill_item">
+                    <div class="skill_img">
+                        <img src="./accets/images/Figma.jpg" alt="Photoshop">
+                    </div>
+                    <p class="skill_name">
+                        Figma
+                    </p>
+                    <div class="skill_rating">
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                        <span class="skill_star"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2 id="Portfolio">Portfolio</h2>
-        <article>
-            <img src="./accets/images/Fashion-Store.jpg" alt="Fashion-Store" width="970">
-            <a href="#">Online fashion store - Homepage</a>
+    <section class="container">
+        <h2 class="Portfolio-title" id="Portfolio">Portfolio</h2>
+        <article class="Portfolio-item">
+            <img class="Portfolio-img" src="./accets/images/Fashion-Store.jpg" alt="Fashion-Store" width="970">
+            <a class="Portfolio-img-link" href="#">Online fashion store - Homepage</a>
         </article>
-        <article>
-            <img src="./accets/images/reebok_web.jpg" alt="reebok_web" width="970">
-            <a href="#">Reebok Store - Concept</a>
+        <article class="Portfolio-item">
+            <img class="Portfolio-img" src="./accets/images/reebok_web.jpg" alt="reebok_web" width="970">
+            <a class="Portfolio-img-link" href="#">Reebok Store - Concept</a>
         </article>
-        <article>
-            <img src="./accets/images/braun-landing.jpg" alt="braun-landing" width="970">
-            <a href="#">Braun Landing Page - Concept</a>
+        <article class="Portfolio-item">
+            <img class="Portfolio-img" src="./accets/images/braun-landing.jpg" alt="braun-landing" width="970">
+            <a class="Portfolio-img-link" href="#">Braun Landing Page - Concept</a>
         </article>
     </section>
-    <footer>
-        <h2 id="Contacts">Contacts</h2>
-        <p>Want to know more or just chat?
+    <footer class="container">
+        <h2 class="footer-title" id="Contacts">Contacts</h2>
+        <p class="footer-text">Want to know more or just chat?
         You are welcome!</p>
-        <button type="submit">Send message</button>
-        <ul>
-        <li><a href="https://www.linkedin.com/"><img src="./accets/images/linkedin.jpg" alt="logo linkedin" width="40"></a></li>
-        <li><a href="https://www.instagram.com/"><img src="./accets/images/instagram.jpg" alt="logo instagram" width="40"></a></li>
-        <li><a href="https://www.behance.com/"><img src="./accets/images/behance.jpg" alt="logo behance" width="40"></a></li>
-        <li><a href="https://www.dribbble.com/"><img src="./accets/images/dribbble.jpg" alt="logo dribbble" width="40"></a></li>
-        <span> Like me on LinkedIn, Instagram, Behance, Dribble</span></ul>
+        <button class="footer-button" type="submit">Send message</button>
+        <ul class="footer-item">
+        <li><a class="footer-item-link" href="https://www.linkedin.com/"><img src="./accets/images/linkedin.jpg" alt="logo linkedin" width="40"></a></li>
+        <li><a class="footer-item-link" href="https://www.instagram.com/"><img src="./accets/images/instagram.jpg" alt="logo instagram" width="40"></a></li>
+        <li><a class="footer-item-link" href="https://www.behance.com/"><img src="./accets/images/behance.jpg" alt="logo behance" width="40"></a></li>
+        <li><a class="footer-item-link" href="https://www.dribbble.com/"><img src="./accets/images/dribbble.jpg" alt="logo dribbble" width="40"></a></li>
+        </ul>
+        <p class="foooter-end-text"> Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
     </footer>
 </body>
 </html>
