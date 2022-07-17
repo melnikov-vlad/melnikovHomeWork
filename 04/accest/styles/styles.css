@@ -1,0 +1,264 @@
+/* normalize */
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    max-height: 740px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.47;
+    letter-spacing: -0.2px;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.input {
+    display: block;
+    width: 245px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    padding: 0 0 0 10px;
+    margin-right: 12px;
+}
+.input:focus{
+    border: 1px solid #007BFF;
+}
+
+.input-big {
+    width: 500px;
+    height: 38px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.all-section{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E5E5E5;
+    padding: 30px 30px;
+}
+
+/* .first-form */
+
+.box-fist-form {
+    padding-left: 34px;
+    border: 1px solid #007BFF;
+    margin-right: 30px;
+    background-color: #FFFFFF;
+}
+
+.hello-text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #1C1C1C;
+        padding: 35px 0 20px 0;
+
+}
+.first-form {
+    width: 100%;
+    max-width: 570px;
+    max-height: 590px;
+    background-color: #FFFFFF;
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+}
+.label-text {
+    display: block;
+    padding: 0 0 7px 0;
+    color: #545454;
+    cursor: pointer;
+    width: 245px;
+    height: 22px;
+}
+.attention-text {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.38;
+    letter-spacing: -0.10000000149011612px;
+    text-align: left;
+    color: #969696;
+    width: 500px;
+}
+
+/* radio */
+
+.fake-radio-label {
+    display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100px;
+       
+}
+.fake-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.fake-radio-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    cursor: pointer;
+    gap: 20px;
+    margin-right: 8px;
+    
+}
+.fake-radio:checked + .fake-radio-span::before {
+    content: "";
+    display: inline-block;
+    border: 6px solid #007BFF;
+    border-radius: 50%;
+}
+.fake-radio-button {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+ 
+/* box-down-form */
+
+.box-dawn-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+.country-option {
+    width: 245px;
+        height: 38px;
+        background: #FFFFFF;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+        padding: 0 0 0 10px;
+        margin-right: 12px;
+        background-image: url(https://cdn-icons-png.flaticon.com/512/566/566004.png);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: 90% center;
+    } 
+   
+.country-option:focus{
+    border: 1px solid #007BFF
+}
+    
+select {
+    appearance: none;
+}
+
+/* footer first section*/
+.singUp-button {
+    font-family: Roboto;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.46;
+        letter-spacing: -0.10000000149011612px;
+        text-align: center;
+        background-color: #007BFF;
+        color: #FFFFFF;
+        width: 500px;
+        height: 38px;
+        border: 1px solid #E4E4E4;
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+        margin-bottom: 22px;
+
+}
+.singUp-text {
+    /* width: 410px; */
+    height: 36px;
+    text-align: center;
+}
+.for-border-buttom {
+    border-bottom: 1px solid #E4E4E4;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.text-logIn {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* second section */
+
+.box-second-form {
+    padding-left: 34px;
+    border: 1px solid #007BFF;
+    background-color: #FFFFFF;
+}
+
+.input-delete {
+    width: 30px;
+    height: 30px;
+    background-image: url(https://w7.pngwing.com/pngs/271/838/png-transparent-computer-icons-delete-icon-white-text-logo.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center center;
+}
+.input-donload {
+    background-image: url(https://ru.seaicons.com/wp-content/uploads/2015/10/Old-Camera-icon1.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 90% center;
+    width: 138px;
+    height: 30px;
+    
+}
+.second-up-form {
+    width: 100%;
+        max-width: 570px;
+        max-height: 590px;
+        background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    /* flex-grow: */
+    gap: 10px;
+}
+.div-donload {
+    width: 140px;
+}
+
+.second-down-form {
+    width: 100%;
+        max-width: 570px;
+        max-height: 590px;
+        background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.update-button {
+    width: 150px;
+}
