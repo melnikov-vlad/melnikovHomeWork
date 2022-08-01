@@ -101,12 +101,7 @@ body *{
         letter-spacing: 0em;
         margin-left: 3px;
 }
-.span-text::after {
-    content: ')';
-}
-.span-text::before {
-    content: '(';
-}
+
 .boxForLabel {
     width: 535px;
     height: 45px;
@@ -117,6 +112,13 @@ body *{
 
 }
 
+/* .span-text::after {
+    content: ')';
+}
+.span-text::before {
+    content: '(';
+} */
+
 .main-checkbox:checked + .fake-checkbox::before {
     content: '';
     display: inline-block;
@@ -125,18 +127,22 @@ body *{
     border: solid black;
     border-width: 0  3px 3px 0;
     transform: rotate(45deg);
-    color: #9B96AC;
     text-decoration: line-through;
     
+    
 }
-/* .fake-checkbox:checked + .label-text::before {
-    content: '';
-    display: inline-block;
+
+
+.fake-checkbox:checked ~ .span-text::before {
     text-decoration: line-through;
-} */
+        color: #9B96AC;
+}
+    
+
 
 /* .fake-checkbox:active {
     text-decoration: line-through;
+    color: #9B96AC;
 } */
 
 .boxForLabel:hover {
