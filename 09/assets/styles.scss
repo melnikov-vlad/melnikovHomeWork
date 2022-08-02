@@ -49,6 +49,7 @@ $main-color: #FFCC00;
     max-width: 1170px;
     height: 100%;
     margin: 121px auto;
+
 }
 
 .header {
@@ -56,6 +57,8 @@ $main-color: #FFCC00;
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
+    width: 100%;
+
 
     .start-text {
         font-family: "Raleway";
@@ -147,6 +150,7 @@ $main-color: #FFCC00;
                 letter-spacing: 0em;
                 text-align: center;
                 color: #666666;
+                padding-bottom: 30px;
 
             }
 }
