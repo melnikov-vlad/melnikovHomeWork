@@ -1,0 +1,54 @@
+a {
+    color: inherit;
+  text-decoration: none;
+}
+
+
+
+.main_box {
+        position: relative;
+        margin: 150;
+        width: 500px;
+        height: 500px;
+        background-color: blueviolet;
+}
+
+
+
+.first_box {
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+}
+
+.second_box {
+    position: absolute;
+    opacity: 0;
+    width: 180px;
+        height: 180px;
+        background-color: red;
+    
+        
+}
+
+.second_box:hover {
+    opacity: 1;
+
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  cursor: pointer;
+}
+  
+.icon:hover{
+    color: chartreuse;
+    background-color: navy;
+}

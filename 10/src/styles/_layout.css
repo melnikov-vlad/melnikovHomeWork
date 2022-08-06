@@ -23,4 +23,10 @@
   height: 100%;
   max-width: 1440px;
   max-height: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 39px;
 }

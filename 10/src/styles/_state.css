@@ -8,6 +8,27 @@
   color: #ffffff;
 }
 
-.content__img :hover {
-  color: #000111;
+.img__fake:hover {
+  opacity: 1;
+}
+.img__fake:hover .icon:hover {
+  color: #18B5DC;
+  background-color: #ffffff;
+}
+
+.img__fake-norm:hover {
+  opacity: 1;
+}
+.img__fake-norm:hover .icon:hover {
+  color: #18B5DC;
+  background-color: #ffffff;
+}
+
+.footer-section__item:hover {
+  color: #18B5DC;
+}
+
+.icon_footer:hover {
+  background: #18B5DC;
+  color: #fff;
 }
