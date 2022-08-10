@@ -203,12 +203,12 @@ img {
 .content__list .img__fake {
   width: 100%;
   height: 100%;
-  max-width: 170px;
-  max-height: 238.19px;
   position: absolute;
   background-color: #18B5DC;
   top: 0;
-  left: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
 }
 .content__list .img__fake .icon {
@@ -268,14 +268,14 @@ img {
 }
 
 .img__fake-norm {
-  width: 100%;
-  height: 100%;
   max-width: 250px;
   max-height: 250px;
   position: absolute;
   background-color: #18B5DC;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
 }
 .img__fake-norm .icon {
