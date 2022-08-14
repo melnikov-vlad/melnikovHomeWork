@@ -1,0 +1,10 @@
+.img:hover {
+  filter: none;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.link:hover {
+  background-color: #E0E0E0;
+  z-index: 2;
+}
