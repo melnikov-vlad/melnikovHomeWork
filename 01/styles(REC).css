@@ -1,65 +1,112 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 a {
-    color: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
   text-decoration: none;
 }
 
-
-
-.main_box {
-        position: relative;
-        margin: 150;
-        width: 500px;
-        height: 500px;
-        background-color: blueviolet;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-
-
-.first_box {
-        width: 200px;
-        height: 200px;
-        background-color: brown;
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.second_box {
-    position: absolute;
-    opacity: 0;
-    width: 180px;
-        height: 180px;
-        
-    
+button {
+  margin: 0;
+  padding: 0;
 }
 
-.icon {
-  width: 100%;
+span {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: inline-block;
   height: 100%;
-  max-width: 40px;
-  max-height: 40px;
-  border: 1px solid #E0E0E0;
-  padding: 10px;
-  border-radius: 16px;
-  background-color: #E0E0E0;
-  position: absolute;
-    right: 5px;
-    top: 5px;
+  width: 100%;
+  max-width: 142px;
+  max-height: 12px;
+  margin: 44px 0 0 135px;
+  font-size: 0;
+  margin-right: 428px;
 }
 
-.icon-linkedin {
-  position: absolute;
-    left: 5px;
-    top: 5px;
+.nav_box, .nav {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  max-height: 18px;
+  font-size: 0;
+  margin-right: 84px;
+}
+.nav_box .nav_list, .nav .nav_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav_box .nav_list .nav_link, .nav .nav_list .nav_link {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: 0.3em;
+  text-align: center;
 }
 
-.second_box:hover {
-  opacity: 1;
+.header_search {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  max-width: 16px;
+  max-height: 17px;
+}
+.nav_link:hover {
+    text-decoration: underline;
 }
 
-.icon:hover {
-  color: chartreuse;
-  background-color: cornflowerblue;
-}
 
-.icon-linkedin:hover {
-  color: #00ffbf;
-  background-color: #ed7964;
+.nav_list {
+  position: fixed;
+  background-color: blue;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 75%;
+  max-width: 600px;
+}
+@media screen and (max-width: 1366px) {
+  .nav_list {
+    display: none;
+  }
+  
 }
