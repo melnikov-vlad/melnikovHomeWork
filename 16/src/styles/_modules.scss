@@ -1,0 +1,83 @@
+//section header
+
+.header_contacts {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+
+        .header_link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.54;
+            letter-spacing: 0em;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            color: #FFFFFF;
+        }
+}
+
+.header_nav {
+    width: 100%;
+    max-width: 1110px;
+
+        // .nav_wrapper {
+           
+        // }
+
+        .nav_list{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+                .nav_item {
+                    width: 100%;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    border: 1px solid #FFFFFF;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+                    color: #FFFFFF;
+                    
+               }
+
+               .border_left {
+                    border-left: none;
+               }
+
+               .border_right {
+                    border-right: none;
+               }
+        }
+}
+
+//section hero
+
+.hero_link {
+    padding: 15px 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background-color: #99862A;
+    text-transform: uppercase;
+
+}
+
+.hero :first-child {
+    margin-right: 30px;
+}
+.hero_list {
+    position: absolute;
+    top: 700px;
+    left: 35%;
+}

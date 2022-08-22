@@ -1,4 +1,6 @@
 body, html {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -7,28 +9,17 @@ body * {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  text-decoration: none;
-  display: inline-block;
-}
-
 p {
   margin: 0;
   padding: 0;
 }
 
-ul, li {
+a {
+  color: inherit;
+  text-decoration: none;
   margin: 0;
   padding: 0;
-  list-style: none;
+  display: inline-block;
 }
 
 button {
@@ -41,12 +32,18 @@ span {
   padding: 0;
 }
 
-img {
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2 {
   margin: 0;
   padding: 0;
 }
 
-nav {
+img {
   margin: 0;
   padding: 0;
 }

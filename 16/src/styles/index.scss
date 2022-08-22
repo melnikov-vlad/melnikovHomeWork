@@ -1,0 +1,5 @@
+@use 'base';        //all site
+@import 'layout';    //for cosection or container
+@import 'modules';    // styles for elements
+@import 'state';      // styles for hover or elements that change their appearance
+@import 'media';         // for @media screen
