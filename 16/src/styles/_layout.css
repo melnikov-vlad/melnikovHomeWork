@@ -23,3 +23,19 @@
   background-size: 100% 100%;
   position: relative;
 }
+
+.about_wrapper {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #282828;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.collection_wrapper {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #E6E3C4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
