@@ -90,6 +90,22 @@ img {
   padding-bottom: 80px;
 }
 
+.form_wrapper {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #282828;
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.footer_wrapper {
+  width: 100%;
+  max-width: 1920px;
+  background-color: #998431;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .header_contacts {
   width: 100%;
   max-width: 1110px;
@@ -337,4 +353,191 @@ img {
   color: #FFFFFF;
   background-color: #99862A;
   text-transform: uppercase;
+}
+
+.form {
+  width: 100%;
+  max-width: 1110px;
+  border: 3px solid #C4C4C4;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 105px;
+}
+.form .form_img {
+  width: 100%;
+  max-width: 260px;
+  position: absolute;
+}
+.form .form_img_right {
+  top: -80px;
+  right: -55px;
+}
+.form .form_img_left {
+  top: -70px;
+  left: -30px;
+}
+.form .form_title {
+  display: block;
+  max-width: 490px;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: 323px;
+  top: -45px;
+  background-color: #282828;
+  padding: 10px 50px;
+}
+.form .form_title::after {
+  content: "";
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  height: 0.1px;
+  width: 118px;
+  position: absolute;
+  top: 85px;
+  left: 172px;
+}
+.form .form_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 540px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+.form .form_article {
+  width: 100%;
+  max-width: 580px;
+  margin: 0 auto;
+}
+.form .form_article .form_input {
+  width: 272px;
+  height: 25px;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: #282828;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 20px 20px 20px 2px;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+.form .form_article .form_input_big {
+  width: 580px;
+  height: 25px;
+}
+.form .form_article .form_input_margin {
+  margin-right: 30px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #FFFFFF;
+  padding-left: 8px;
+}
+
+.form_button {
+  display: block;
+  width: 580px;
+  height: 50px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background-color: #282828;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1110px;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 0 auto;
+}
+.footer .footer_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-height: 60px;
+  padding: 20px 0;
+  border-bottom: 1px solid #FFFFFF;
+}
+.footer .footer_list .footer_item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.footer_list_second {
+  display: flex;
+  justify-content: space-around;
+}
+.footer_list_second .footer_item_second {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 17px;
+  padding-bottom: 5px;
+  border-right: 1px solid #FFFFFF;
+}
+.footer_list_second .footer_icon {
+  width: 100%;
+  max-width: 26px;
+  max-height: 26px;
+  margin-right: 35px;
+}
+
+.footer_list_second :nth-child(4) {
+  border-right: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.form_button:hover {
+  background-color: cadetblue;
+  color: darkmagenta;
+}
+
+a:hover {
+  color: lightcoral;
+}
+
+.footer_icon:hover {
+  border: 2px solid lightcoral;
 }/*# sourceMappingURL=index.css.map */
