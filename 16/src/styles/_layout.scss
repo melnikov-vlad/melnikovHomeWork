@@ -1,19 +1,20 @@
 .main_wrapper {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
 }
 .header {
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;
   position: absolute;
-  left: 9%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
 }
 .hero {
   width: 100%;
   height: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   height: 900px;
   max-height: 900px;
   background-image: url(../images/bgc.jpg);
@@ -23,7 +24,7 @@
 }
 .about_wrapper {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
 //   max-height: 856px;
   background-color: #282828;
   padding-top: 100px;
@@ -31,14 +32,14 @@
 }
 .collection_wrapper {
     width: 100%;
-    max-width: 1920px;
+    // max-width: 1920px;
     background-color: #E6E3C4;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 .form_wrapper {
     width: 100%;
-    max-width: 1920px;
+    // max-width: 1920px;
     background-color: #282828;
     padding-top: 140px;
     padding-bottom: 80px;

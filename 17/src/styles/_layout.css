@@ -1,0 +1,6 @@
+.header_wrapper {
+  width: 100%;
+  background-image: url(../images/HeaderBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
