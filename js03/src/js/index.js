@@ -61,6 +61,18 @@ switch (chooseNumber) {
 
 alert("taskMin3")
 
-let arrayNumber = prompt("А тепер запиши будь яку кількість чисел (давай до 20 штук), а я порахую їх сумму. Починай")
-let arrayNumberResult = Array.from(arrayNumber)
-alert(`Таким чином, ти написав число ${arrayNumber} і підсумок усіх цифр буде ${arrayNumberResult}`)
+let arrayNumber = prompt("А тепер запиши будь яку кількість чисел (давай до 20 штук), а я порахую їх добуток. Починаємо")
+let arrayNumberResult = Array.from(arrayNumber).reduce(function (totalNumber, elem) {
+    if (elem >= 0) {
+		return totalNumber * elem;  // + not work//
+	} else {
+		return totalNumber;
+	}
+})
+alert(`Таким чином, ти написав число ${arrayNumber} і добуток (*) усіх цифр буде ${arrayNumberResult}`)
+
+alert("taskMin4")
+
+let firstNumber = prompt("Ще в мене, є таке прохання, закадай мені два числа, ая спробую знайт їхній найбільший спільний дільник. Перше число буде");
+let secondNumber = prompt("Друге число");
+// alert (`Одже перше число ${} , а друге число ${secondNumber} і їхній найбільший спільний дільник буде ${}`)

@@ -73,6 +73,15 @@ switch (chooseNumber) {
 }
 
 alert("taskMin3");
-var arrayNumber = prompt("А тепер запиши будь яку кількість чисел (давай до 20 штук), а я порахую їх сумму. Починай");
-var arrayNumberResult = Array.from(arrayNumber);
-alert("\u0422\u0430\u043A\u0438\u043C \u0447\u0438\u043D\u043E\u043C, \u0442\u0438 \u043D\u0430\u043F\u0438\u0441\u0430\u0432 \u0447\u0438\u0441\u043B\u043E ".concat(arrayNumber, " \u0456 \u043F\u0456\u0434\u0441\u0443\u043C\u043E\u043A \u0443\u0441\u0456\u0445 \u0446\u0438\u0444\u0440 \u0431\u0443\u0434\u0435 ").concat(arrayNumberResult));
+var arrayNumber = prompt("А тепер запиши будь яку кількість чисел (давай до 20 штук), а я порахую їх добуток. Починаємо");
+var arrayNumberResult = Array.from(arrayNumber).reduce(function (totalNumber, elem) {
+  if (elem >= 0) {
+    return totalNumber * elem; // + not work//
+  } else {
+    return totalNumber;
+  }
+});
+alert("\u0422\u0430\u043A\u0438\u043C \u0447\u0438\u043D\u043E\u043C, \u0442\u0438 \u043D\u0430\u043F\u0438\u0441\u0430\u0432 \u0447\u0438\u0441\u043B\u043E ".concat(arrayNumber, " \u0456 \u0434\u043E\u0431\u0443\u0442\u043E\u043A (*) \u0443\u0441\u0456\u0445 \u0446\u0438\u0444\u0440 \u0431\u0443\u0434\u0435 ").concat(arrayNumberResult));
+alert("taskMin4");
+var firstNumber = prompt("Ще в мене, є таке прохання, закадай мені два числа, ая спробую знайт їхній найбільший спільний дільник. Перше число буде");
+var secondNumber = prompt("Друге число"); // alert (`Одже перше число ${} , а друге число ${secondNumber} і їхній найбільший спільний дільник буде ${}`)
