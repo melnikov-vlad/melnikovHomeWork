@@ -18,7 +18,7 @@ if (userOld >= 18 && userOld <= 59) {
 if (userOld >= 60 && userOld <= 99) {
   alert("Оу, старенькі які ви тут! В вас мабудь велика кількість байок є? Ну,гаразд, по дорозі розкажете");
 } else {
-  alert("Щось я не зрозумів, спробуємо наступного разу, бачу тобі не дуже хочеть ся про це говорити"); //     return {
+  alert("Щось я не зрозумів, спробуємо наступного разу, бачу тобі не дуже хочеться про це говорити"); //     return {
   //         userOld
   //     };
 }
@@ -83,5 +83,32 @@ var arrayNumberResult = Array.from(arrayNumber).reduce(function (totalNumber, el
 });
 alert("\u0422\u0430\u043A\u0438\u043C \u0447\u0438\u043D\u043E\u043C, \u0442\u0438 \u043D\u0430\u043F\u0438\u0441\u0430\u0432 \u0447\u0438\u0441\u043B\u043E ".concat(arrayNumber, " \u0456 \u0434\u043E\u0431\u0443\u0442\u043E\u043A (*) \u0443\u0441\u0456\u0445 \u0446\u0438\u0444\u0440 \u0431\u0443\u0434\u0435 ").concat(arrayNumberResult));
 alert("taskMin4");
-var firstNumber = prompt("Ще в мене, є таке прохання, закадай мені два числа, ая спробую знайт їхній найбільший спільний дільник. Перше число буде");
-var secondNumber = prompt("Друге число"); // alert (`Одже перше число ${} , а друге число ${secondNumber} і їхній найбільший спільний дільник буде ${}`)
+var firstNumber = prompt("Ще в мене, є таке прохання, закадай мені два числа, а я спробую знайти їхній найбільший спільний дільник. Перше число буде");
+var secondNumber = prompt("Друге число");
+
+function NOD(firstNumber, secondNumber) {
+  if (secondNumber > firstNumber) return NOD(secondNumber, firstNumber);
+  if (!secondNumber) return firstNumber;
+  return NOD(secondNumber, firstNumber % secondNumber);
+}
+
+alert("\u041E\u0434\u0436\u0435 \u043F\u0435\u0440\u0448\u0435 \u0447\u0438\u0441\u043B\u043E ".concat(firstNumber, " , \u0430 \u0434\u0440\u0443\u0433\u0435 \u0447\u0438\u0441\u043B\u043E ").concat(secondNumber, " \u0442\u043E \u0457\u0445\u043D\u0456\u0439 \u043D\u0430\u0439\u0431\u0456\u043B\u044C\u0448\u0438\u0439 \u0441\u043F\u0456\u043B\u044C\u043D\u0438\u0439 \u0434\u0456\u043B\u044C\u043D\u0438\u043A \u0431\u0443\u0434\u0435 ").concat(NOD(firstNumber, secondNumber)));
+alert("taskMin5");
+var oneNumber = prompt(" (\u0426\u0415 \u041D\u0415 \u0412\u0418\u0419\u0428\u041B\u041E, \u0406 \u0414\u0410\u041B\u0406 \u041D\u0406\u0427\u041E\u0413\u041E \u041D\u0415\u041C\u0410) \u0410 \u043E\u0441\u044C \u0432\u0436\u0435 \u043E\u0441\u0442\u0430\u043D\u043D\u0454 \u0437\u0430\u0432\u0434\u0430\u043D\u043D\u044F \u043C\u0456\u043D\u0456\u043C\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0440\u0456\u0432\u043D\u044F. \u041D\u0430\u0437\u0432\u0438 \u043C\u0435\u043D\u0456 \u0431\u0443\u0434\u044C \u044F\u043A\u0435 \u0447\u0438\u0441\u043B\u043E (\u0434\u0430\u0432\u0430\u0439 \u043C\u0430\u0431\u0443\u0442\u044C \u043C\u0435\u043D\u0448\u0435 100 000 000, \u0449\u043E\u0431 \u043B\u0435\u0433\u0448\u0435 \u0440\u0430\u0445\u0443\u0432\u0430\u043B\u043E\u0441\u044F), \u0430 \u044F \u043D\u0430\u0437\u0432\u0443 \u0443\u0441\u0456 \u0439\u043E\u0433\u043E \u0434\u0456\u043B\u044C\u043D\u0438\u043A\u0438.\n \u041E\u0442\u0436\u0435 \u043F\u043E\u0447\u0430\u043B\u0438, \u0442\u0432\u043E\u0454 \u0447\u0438\u0441\u043B\u043E \u0431\u0443\u0434\u0435...");
+var arrayOneNumber = Array.from(oneNumber);
+
+for (var _i = 0; _i <= arrayOneNumber.length - 1; _i++) {
+  ;
+}
+
+if (arrayOneNumber[i] % 2 === 0) {
+  alert("\u041E\u0442\u0436\u0435 \u0432 \u0437\u0430\u0433\u0430\u0434\u0430\u043D\u043E\u043C\u0443 \u0442\u043E\u0431\u043E\u044E \u0447\u0438\u0441\u043B\u0456 ".concat(oneNumber, ", \u0454 \u0442\u0430\u043A\u0456 \u0434\u0456\u043B\u044C\u043D\u0438\u043A\u0438 ").concat(arrayOneNumber[i]));
+}
+
+;
+
+if (i >= 100000001) {
+  alert("\u041C\u0438 \u0436 \u0434\u043E\u043C\u043E\u0432\u0438\u043B\u0438\u0441\u044C, \u0449\u043E \u0442\u0440\u0435\u0431\u0430 \u0432\u0432\u043E\u0434\u0438\u0442! \u0410 \u0442\u0438 \u0432\u0432\u0456\u0432 \u044F\u043A\u0443\u0441\u044C \u0434\u0443\u0440\u043D\u0438\u0446\u044E ".concat(oneNumber));
+}
+
+;
