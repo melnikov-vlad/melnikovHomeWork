@@ -55,11 +55,12 @@ var time = {
   second: 1,
   sumSecond: function sumSecond(addSecond) {
     this.second += addSecond;
+    return this.second;
   },
-  showTime: function showTime() {
-    alert("\u041F\u0440\u0438\u0432\u0456\u0442 \u0414\u0440\u0443\u0436\u0435! \u041D\u0430 \u0434\u0430\u043D\u043D\u0438\u0439 \u0447\u0430\u0441 \"".concat(this.hour, "\" \u0433\u043E\u0434\u0438\u043D \"").concat(this.minut, "\" \u0445\u0432\u0438\u043B\u0438\u043D \u0442\u0430 \"").concat(this.sumSecond(), "\" \u0441\u0435\u043A\u0443\u043D\u0434."));
+  showTime: function showTime(second) {
+    alert("\u041F\u0440\u0438\u0432\u0456\u0442 \u0414\u0440\u0443\u0436\u0435! \u041D\u0430 \u0434\u0430\u043D\u043D\u0438\u0439 \u0447\u0430\u0441 \"".concat(this.hour, "\" \u0433\u043E\u0434\u0438\u043D \"").concat(this.minut, "\" \u0445\u0432\u0438\u043B\u0438\u043D \u0442\u0430 \"").concat(this.sumSecond(second), "\" \u0441\u0435\u043A\u0443\u043D\u0434."));
   }
 };
-time.showTime();
-time.sumSecond(20);
+time.showTime(30); // time.sumSecond(20)
+
 console.log(time);

@@ -63,15 +63,16 @@ const time = {
     
     sumSecond: function (addSecond) {
         this.second += addSecond;
+        return this.second;
     },
-    showTime: function () {
-        alert(`Привіт Друже! На данний час "${this.hour}" годин "${this.minut}" хвилин та "${this.sumSecond()}" секунд.`)
+    showTime: function (second) {
+        alert(`Привіт Друже! На данний час "${this.hour}" годин "${this.minut}" хвилин та "${this.sumSecond(second)}" секунд.`);
     },
     
 }
 
-time.showTime()
+time.showTime(30)
 
-time.sumSecond(20)
+// time.sumSecond(20)
 
 console.log(time)
