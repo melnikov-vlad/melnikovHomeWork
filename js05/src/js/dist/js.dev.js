@@ -41,10 +41,10 @@ car.userDist(2000);
 console.log(car.drivers.includes("yana"));
 car.addDrivers("mitia");
 car.showCar(); //Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
-// 1. Для виведення часу на екран.
-// 2. Зміни часу на передану кількість секунд.
-// 3. Зміни часу на передану кількість хвилин.
-// 4. Зміни часу на передану кількість годин.
+// 1.^ Для виведення часу на екран.
+// 2.^ Зміни часу на передану кількість секунд.
+// 3.^ Зміни часу на передану кількість хвилин.
+// 4.^ Зміни часу на передану кількість годин.
 // 5. Враховуйте, що в останніх 3-х функціях, при зміні однієї частини часу, може змінитися і інша.
 //      Наприклад: якщо до часу «20: 59: 45» додати 30 секунд, то повинно вийти «21: 00: 15», а не «20: 59: 75».
 //      Також потрібно передбачити можливість того що користувач може передати 150 секунд, або 75 хвилин.
@@ -57,10 +57,18 @@ var time = {
     this.second += addSecond;
     return this.second;
   },
-  showTime: function showTime(second) {
-    alert("\u041F\u0440\u0438\u0432\u0456\u0442 \u0414\u0440\u0443\u0436\u0435! \u041D\u0430 \u0434\u0430\u043D\u043D\u0438\u0439 \u0447\u0430\u0441 \"".concat(this.hour, "\" \u0433\u043E\u0434\u0438\u043D \"").concat(this.minut, "\" \u0445\u0432\u0438\u043B\u0438\u043D \u0442\u0430 \"").concat(this.sumSecond(second), "\" \u0441\u0435\u043A\u0443\u043D\u0434."));
+  sumMinut: function sumMinut(addMinut) {
+    this.minut += addMinut;
+    return this.minut;
+  },
+  sumHour: function sumHour(addHour) {
+    this.hour += addHour;
+    return this.hour;
+  },
+  showTime: function showTime(second, minut, hour) {
+    alert("\u041F\u0440\u0438\u0432\u0456\u0442 \u0414\u0440\u0443\u0436\u0435! \u041D\u0430 \u0434\u0430\u043D\u043D\u0438\u0439 \u0447\u0430\u0441 \"".concat(this.sumHour(hour), "\" \u0433\u043E\u0434\u0438\u043D \"").concat(this.sumMinut(minut), "\" \u0445\u0432\u0438\u043B\u0438\u043D \u0442\u0430 \"").concat(this.sumSecond(second), "\" \u0441\u0435\u043A\u0443\u043D\u0434."));
   }
 };
-time.showTime(30); // time.sumSecond(20)
+time.showTime(30, 80, 50); // time.sumSecond(20)
 
 console.log(time);
