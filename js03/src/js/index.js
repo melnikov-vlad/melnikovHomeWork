@@ -71,6 +71,16 @@ let arrayNumberResult = Array.from(arrayNumber).reduce(function (totalNumber, el
 })
 alert(`Таким чином, ти написав число ${arrayNumber} і добуток (*) усіх цифр буде ${arrayNumberResult}`)
 
+// let arrayNumberResult = arrayNumber.split('').reduce(function(totalNumber, elem) {
+//     elem = parseInt(elem);
+//     if (elem >= 0) {
+//         return totalNumber + elem;  // + not work//
+//     } else {
+//         return totalNumber;
+//     }
+// }, 0);
+// console.log(arrayNumberResult);
+
 alert("taskMin4")
 
 let firstNumber = prompt("Ще в мене, є таке прохання, закадай мені два числа, а я спробую знайти їхній найбільший спільний дільник. Перше число буде");

@@ -31,7 +31,7 @@ const shoppingList = [
     {
         item: 'nuts',
         number: 1,
-        buy: 'yes',
+        buy: 'no',
         price: 12,
         totalPrice: 12,
     },
@@ -51,8 +51,12 @@ shoppingList.sort(function (a, b) {
     }
 )
 
-shoppingList.splice()
+// shoppingList.splice()
 
-let findObject = shoppingList.find(el => el.shoppingList.buy)
+// let findObject = shoppingList.find(el => el.shoppingList.buy)
+
 
 console.log(shoppingList);
+
+console.log(shoppingList.findIndex((el) => { return el.item === 'beer' }));
+

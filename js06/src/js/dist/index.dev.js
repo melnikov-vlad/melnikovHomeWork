@@ -27,7 +27,7 @@ var shoppingList = [{
 }, {
   item: 'nuts',
   number: 1,
-  buy: 'yes',
+  buy: 'no',
   price: 12,
   totalPrice: 12
 }];
@@ -43,9 +43,10 @@ shoppingList.sort(function (a, b) {
   if (a.buy == b.buy) {
     return 0;
   }
-});
-shoppingList.splice();
-var findObject = shoppingList.find(function (el) {
-  return el.shoppingList.buy;
-});
+}); // shoppingList.splice()
+// let findObject = shoppingList.find(el => el.shoppingList.buy)
+
 console.log(shoppingList);
+console.log(shoppingList.findIndex(function (el) {
+  return el.item === 'beer';
+}));
