@@ -1,3 +1,5 @@
+
+
 const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=a5a387ab';
 axios(URL)                        ///ось так отримаємо респонс у консоль
     .then(response => {

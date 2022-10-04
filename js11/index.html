@@ -11,6 +11,20 @@
     <p>Search</p>
     <input type="text" name="filmName" id="search">
     <button onclick="findAFilm()">Find</button>
+    <div>
+        <label>
+            movie
+            <input onchange="changeType(event)" type="radio" name="type" value="movie" id="" checked>
+        </label>
+        <label>
+            series
+            <input onchange="changeType(event)" type="radio" name="type" value="series" id="">
+        </label>
+        <label>
+            episode
+            <input onchange="changeType(event)" type="radio" name="type" value="episode" id="">
+        </label>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
