@@ -47,10 +47,100 @@ h1, h2 {
 img {
   margin: 0;
   padding: 0;
+  display: inline;
 }
 
 .main_wrapper {
+  position: relative;
+  background: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  background-repeat: no-repeat;
+  height: 100vh;
   width: 100%;
   max-width: 1600px;
-  background-color: aqua;
+  padding-top: 50px;
 }
+.main_wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/tu-tram-pham-202263.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.header_wrapper {
+  width: 100%;
+  max-width: 1170px;
+  max-height: 54px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 243px;
+}
+.header_wrapper .logo {
+  width: 100%;
+  max-width: 241px;
+}
+.header_wrapper .nav_wrapper {
+  width: 100%;
+  max-width: 515px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_list .nav_link {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.social_list {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+}
+.social_list .social_item {
+  width: 40px;
+  height: 40px;
+}
+
+.header_slider {
+  max-width: 920px;
+  max-height: 140px;
+  margin: 0 auto;
+}
+
+.slider_main_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 77px;
+  font-weight: 700;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.slider_second_text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */
