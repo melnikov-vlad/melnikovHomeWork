@@ -1,3 +1,5 @@
+@import 'state';
+
 .header_wrapper {
     width: 100%;
     max-width: 1170px;
@@ -6,12 +8,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 243px;
+    padding-bottom: 203px;
     
 
     .logo {
         width: 100%;
         max-width: 241px;
+        cursor: pointer;
     }
 
     .nav_wrapper {
@@ -26,27 +29,21 @@
     align-items: center;
 
     .nav_link {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 18px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: #FFFFFF;
-        text-transform: uppercase;
+        @include nav_item
 
     }
 }
 
 .social_list {
     width: 160px;
-    // height: 100%;
-    // max-height: 40px;
-    // max-width: 160px;
+    height: 100%;
+    max-height: 40px;
+    max-width: 160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 0;
+    cursor: pointer;
 
     .social_item {
         width: 40px;
@@ -55,13 +52,10 @@
 }
 
 .header_slider {
-    max-width: 920px;
+    max-width: 1290px;
     max-height: 140px;
-    // position: absolute;
-    // left: 50%;
-    // right: 50%;
-    // transform: translateX(-50%);
     margin: 0 auto;
+    
 }
 
 .slider_main_text {
@@ -72,6 +66,8 @@
     letter-spacing: 0.1em;
     text-align: center;
     color: #FFFFFF;
+    padding-top: 60px;
+
 
 }
 
@@ -83,5 +79,37 @@
     letter-spacing: 0.3em;
     text-align: center;
     color: #FFFFFF;
+
+}
+.slick-dots {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.slick-dots button {
+    font-size: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    background-color: transparent;
+
+
+}
+
+.slick-dots li.slick-active button{
+    background-color: #FFFFFF;
+}
+.arrow {
+    
 
 }

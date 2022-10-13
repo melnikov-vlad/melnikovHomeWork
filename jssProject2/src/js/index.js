@@ -4,4 +4,11 @@ $(document).ready(function(){
   });
 });
 
-$('.single-item').slick();
+$('.single-item').slick({
+  dots: true,
+  arrows: false,
+  focusOnSelect: true,
+
+  
+}
+);

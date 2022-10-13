@@ -5,4 +5,8 @@ $(document).ready(function () {
     setting_name: setting - value
   });
 });
-$('.single-item').slick();
+$('.single-item').slick({
+  dots: true,
+  arrows: false,
+  focusOnSelect: true
+});
