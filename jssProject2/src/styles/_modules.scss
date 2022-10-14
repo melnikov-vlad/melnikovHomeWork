@@ -15,6 +15,7 @@
         width: 100%;
         max-width: 241px;
         cursor: pointer;
+        z-index: 2;
     }
 
     .nav_wrapper {
@@ -27,9 +28,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+    .nav_item {
+        z-index: 2;
+    }
+
 
     .nav_link {
         @include nav_item
+        
 
     }
 }
@@ -48,6 +55,7 @@
     .social_item {
         width: 40px;
         height: 40px;
+        z-index: 2;
     }
 }
 
@@ -55,6 +63,7 @@
     max-width: 1290px;
     max-height: 140px;
     margin: 0 auto;
+    padding-bottom: 320px;
     
 }
 
@@ -109,7 +118,12 @@
 .slick-dots li.slick-active button{
     background-color: #FFFFFF;
 }
-.arrow {
-    
+.header_arrow {
+    text-align: center;
 
+    .arrow_img {
+        width: 100%;
+        max-width: 40px;
+        z-index: 2;
+    }
 }
