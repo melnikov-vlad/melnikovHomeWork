@@ -116,10 +116,105 @@ a:hover {
 
 .header_arrow {
   text-align: center;
+  z-index: 2;
+}
+.header_arrow .header_link {
+  z-index: 2;
 }
 .header_arrow .arrow_img {
   width: 100%;
   max-width: 40px;
   z-index: 2;
   padding-bottom: 160px;
+}
+
+.project_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2C4058;
+  text-align: center;
+  position: relative;
+  margin-top: 130px;
+  margin-bottom: 90px;
+}
+
+.project_title::before {
+  content: "";
+  border: 1px solid #2C4058;
+  display: inline-block;
+  position: absolute;
+  height: 0.1px;
+  width: 100px;
+  left: 50%;
+  top: -30px;
+  transform: translateX(-50%);
+}
+
+.project_img {
+  width: 100%;
+  max-width: 630px;
+  max-height: 470px;
+}
+
+.project_sec_first {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.project_sec_first .sec_first_pre_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.project_sec_first .sec_first_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2C4058;
+  padding-bottom: 19px;
+}
+.project_sec_first .sec_first_text {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2C4058;
+  max-width: 470px;
+  max-height: 81px;
+  margin-bottom: 40px;
+}
+.project_sec_first .sec_first_link {
+  padding: 25px 85px;
+  text-align: center;
+  border: 1px solid #2C4058;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #000000;
+  margin-bottom: 60px;
+}
+.project_sec_first .sec_first_link_location {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
