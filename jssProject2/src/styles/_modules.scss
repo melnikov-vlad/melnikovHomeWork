@@ -51,6 +51,9 @@
     align-items: center;
     font-size: 0;
     cursor: pointer;
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
 
     .social_item {
         width: 40px;
@@ -66,6 +69,7 @@
     margin: 0 55px;
     padding-bottom: 130px;
     display: block;
+    position: relative;
 }
 
 .slider_main_text {
@@ -165,10 +169,23 @@
     width: 100%;
     max-width: 630px;
     max-height: 470px;
+    position: relative;
+}
+
+.project_img::after {
+    content: "";
+    width: 630px;
+    height: 470px;
+    background-color: aqua;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .project_sec_first {
     display: flex;
+    align-content: center;
+    justify-content: center;
     align-items: center;
     gap: 70px;
 
